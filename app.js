@@ -8,4 +8,16 @@ const text = [
     "Halvah cake danish fruitcake croissant. Soufflé marzipan jelly marzipan croissant cake sugar plum. Brownie toffee dragée croissant candy canes tart. Cheesecake sweet roll sesame snaps gummi bears sweet roll. Caramels tootsie roll jelly-o. Apple pie cake jelly caramels.",
     "Biscuit sugar plum cookie fruitcake. Pie cookie chocolate bar. Toffee apple pie wafer pudding pie apple pie. Sweet pastry cake carrot cake toffee pastry. Macaroon chocolate jujubes sugar plum. Macaroon halvah jelly-o. Biscuit wafer soufflé topping sweet roll halvah marshmallow chocolate bar. Cake bonbon wafer halvah cupcake lollipop gingerbread biscuit chocolate bar. Liquorice pie jujubes caramels soufflé ice cream. Wafer fruitcake jelly brownie brownie brownie jelly beans.",
     "Biscuit fruitcake gingerbread cheesecake tootsie roll cotton candy jujubes. Sesame snaps cake topping chupa chups caramels fruitcake gummies. Candy biscuit candy danish. Candy canes fruitcake croissant lemon drops. Sugar plum gingerbread cake oat cake caramels. Lemon drops muffin cookie cake cookie chocolate cake jelly beans tootsie roll topping.",
-  ];
+];
+
+
+const form = document.querySelector(".lorem-form");
+const amount = document.getElementById("amount");
+const result = document.querySelector(".lorem-text");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const value = parseInt(amount.value);
+    const random = Math.floor(Math.random() * text.length);
+
+});
